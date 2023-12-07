@@ -10,7 +10,7 @@ clusterGroup:
   - vault
   - golang-external-secrets
   - argo-rollouts
-  - bluegreen
+  - canary-demo
 
   subscriptions:
     acm:
@@ -53,10 +53,12 @@ clusterGroup:
       path: charts/all/argo-rollouts
 
     bluegreen:
-      name: bluegreen
-      namespace: bluegreen
+      name: canary-demo
+      namespace: canary-demo
       project: argo-rollouts
-      path: charts/all/bluegreen
+      path: charts/all/canary-demo
+
+
 
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
