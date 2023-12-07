@@ -8,7 +8,7 @@ global:
     installPlanApproval: Automatic
 
   rollout:
-    image: argoproj/rollouts-demo:red
+    image: argoproj/rollouts-demo:blue
 
 main:
   clusterGroupName: hub
